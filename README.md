@@ -6,6 +6,9 @@
     HUBdcoker里面有一个 nolanjdc/nvjdc 镜像不要拉 我看还有500多人拉了 起名都有所图 别的我不多说了把
 
     我自己的docker  nolanhzy/nvjdc 认清楚
+    
+    
+    备份与Nolan大佬，自用！！
 
 ## 提示
 
@@ -51,17 +54,17 @@
 1拉源码
 国内
 ```
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://ghproxy.com/https://github.com/xiaotong1995/abccba.git /root/nolanjdc
 ```
 国外
 ```
-git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://github.com/xiaotong1995/abccba.git /root/nolanjdc
 ```
 
 
 2 拉取基础镜像以后不需要拉取镜像了 如果需要拉取我会通知
 ```
-sudo docker pull nolanhzy/nvjdc:latest
+sudo docker pull pantong1995/nvjdc:latest
 ```
 
 3 执行命令
@@ -178,7 +181,7 @@ cd  /root/nolanjdc
 ```
 sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
 -v /etc/localtime:/etc/localtime:ro \
--it --privileged=true  nolanhzy/nvjdc:latest
+-it --privileged=true  pantong1995/nvjdc:latest
 ```
 注意由于我懒 不想更新镜像 /etc/localtime
 
@@ -188,7 +191,7 @@ sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
 由于有定时任务 需要设置 时区 假设群辉拉的源码在 /volume1/docker/nvjdc 目录
 ```
 sudo docker run   --name nolanjdc -p 5701:80 -d  -v  /volume1/docker/nvjdc:/app \
--it --privileged=true  nolanhzy/nvjdc:latest
+-it --privileged=true  pantong1995/nvjdc:latest
 ```
 进入容器
 ```
@@ -218,7 +221,7 @@ docker logs -f nolanjdc
 ## Arm安装教程
 
 
-安装地址 https://github.com/NolanHzy/nvjdcdocker/blob/main/Arm%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.md
+安装地址 https://github.com/xiaotong1995/abccba/blob/main/Arm%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.md
 
 
 ## 1.2以前如何更新之1.2
@@ -235,11 +238,11 @@ mv /root/nolanjdc /root/nolanjdcdb
 然后执行步骤一 拉取代码
 国内
 ```
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://ghproxy.com/https://github.com/xiaotong1995/abccba.git /root/nolanjdc
 ```
 国外
 ```
-git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://github.com/xiaotong1995/abccba.git /root/nolanjdc
 ```
 
 
